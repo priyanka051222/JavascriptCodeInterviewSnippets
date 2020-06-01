@@ -1,15 +1,11 @@
 //Formats a string with comma currency format.
-
 function  format(str) {
- return str.replace(/(\d)(?=(\d{3})+(?!\d))/, '$1,');
-  
+ return str.replace(/(\d)(?=(\d{3})+(?!\d))/, '$1,'); 
 }
-
 console.log(format('10000000'));
 
 
 //sum(1)(2)(3)(4)(5)();
-
 let sum = a => b => (b ? sum(a + b) : a);
 console.log(sum(2)(3)(4)(4)(4)(4)());
 
@@ -35,6 +31,7 @@ button.addEventListener(
   }, 3000)
 );
 
+//throttling
 const throttle = (callback, delay) => {
   let throttleTimeout = null;
   let storedEvent = null;
